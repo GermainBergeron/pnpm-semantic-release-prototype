@@ -12,12 +12,11 @@ jobs:
     if: "!contains(github.event.head_commit.message, 'ci skip') && !contains(github.event.head_commit.message, 'skip ci')"
     steps:
       - uses: actions/checkout@v2
+        with:
+          # we need this, to circumflex eh -vent branch protection
+          token: ${{ secrets.AUTH_TOKEN }}
       - name: Prepare repository
         run: git fetch --unshallow --tags
-      - name: git-who-am-i
-        run: git status
-      - name: Prepare repository
-        run: git checkout master
       - name: Use Node.js 12.x and setup Auth for GPR
         uses: actions/setup-node@v1
         with:
@@ -27,8 +26,8 @@ jobs:
 #        # TODO: do not use master
 #        uses: zalari/action-toggle-branch-protection@master
 #        with:
-#          owner: ampeersenergy
-#          repo: react-crm-board
+#          owner: christianulbrich
+#          repo: lerna-release-prototype-in-action
 #          branch: master
 #          GITHUB_TOKEN: ${{ secrets.AUTH_TOKEN }}
 #          off: true
@@ -49,8 +48,8 @@ jobs:
 #        # TODO: do not use master
 #        uses: zalari/action-toggle-branch-protection@master
 #        with:
-#          owner: ampeersenergy
-#          repo: react-crm-board
+#          owner: christianulbrich
+#          repo: lerna-release-prototype-in-action
 #          branch: master
 #          GITHUB_TOKEN: ${{ secrets.AUTH_TOKEN }}
 #          on: ${{ steps.off_branch.outputs.on }}
