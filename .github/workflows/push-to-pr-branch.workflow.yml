@@ -16,20 +16,17 @@ jobs:
         with:
           node-version: 12
           scope: test
-          registry-url: 'https://npm.pkg.github.com'
+          registry-url: 'https://npm.pkg.github.com/zalari'
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
 #      - run: npm ci
 #      - run: npm run bootstrap
 #      - name: Build
 #        run: npm run build
-      - name: show npm config without env
-        run: npm config list
-      - name: show npm config with env
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
+      - name: show npm config
         run: npm config list
       - name: Publish canary version
         env:
           GH_TOKEN: ${{ secrets.AUTH_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
           NPM_TOKEN: ${{ secrets.AUTH_TOKEN }}
         run: npx auto canary --force
