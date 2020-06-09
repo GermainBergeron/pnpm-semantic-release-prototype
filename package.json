@@ -30,6 +30,13 @@
   "author": "Zalari GmbH",
   "license": "ISC",
   "devDependencies": {
-    "lerna": "^3.19.0"
+    "auto": "9.39.0",
+    "lerna": "3.19.0"
+  },
+  "auto": {
+    "plugins": [
+      "npm",
+      "released"
+    ]
   }
 }
