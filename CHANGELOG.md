@@ -1,5 +1,18 @@
 # (Tue Jun 09 2020)
 
+#### 🐛 Bug Fix
+
+- `@christianulbrich/test-component-a@0.1.1`
+  - Feature/patch a [#6](https://github.com/ChristianUlbrich/lerna-release-prototype-in-action/pull/6) ([@ChristianUlbrich](https://github.com/ChristianUlbrich))
+
+#### Authors: 1
+
+- Christian Ulbrich ([@ChristianUlbrich](https://github.com/ChristianUlbrich))
+
+---
+
+# (Tue Jun 09 2020)
+
 #### 🚀 Enhancement
 
 - `@christianulbrich/test-component-a@0.1.0`
