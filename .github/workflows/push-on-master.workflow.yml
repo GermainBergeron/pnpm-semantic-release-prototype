@@ -1,0 +1,48 @@
+name: Create Changelog and Release
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+
+  create-changelog-and-release:
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, 'ci skip') && !contains(github.event.head_commit.message, 'skip ci')"
+    steps:
+      - uses: actions/checkout@v2
+      - name: Prepare repository
+        run: git fetch --unshallow --tags
+      - name: Use Node.js 12.x and setup Auth for GPR
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+          registry-url: 'https://npm.pkg.github.com/'
+#      - name: Disabling branch protection temporarily
+#        # TODO: do not use master
+#        uses: zalari/action-toggle-branch-protection@master
+#        with:
+#          owner: ampeersenergy
+#          repo: react-crm-board
+#          branch: master
+#          GITHUB_TOKEN: ${{ secrets.AUTH_TOKEN }}
+#          off: true
+#        id: off_branch
+      - name: Release
+        env:
+          GH_TOKEN: ${{ secrets.AUTH_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.AUTH_TOKEN }}
+        run: npx auto shipit
+#      - name: Re-enable branch protection
+#        #       regardless, whether release succeeded or not
+#        if: success() || failure()
+#        # TODO: do not use master
+#        uses: zalari/action-toggle-branch-protection@master
+#        with:
+#          owner: ampeersenergy
+#          repo: react-crm-board
+#          branch: master
+#          GITHUB_TOKEN: ${{ secrets.AUTH_TOKEN }}
+#          on: ${{ steps.off_branch.outputs.on }}

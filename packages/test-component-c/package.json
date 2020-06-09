@@ -1,5 +1,5 @@
 {
-  "name": "@test/test-component-c",
+  "name": "@christianulbrich/test-component-c",
   "version": "0.0.5",
   "description": "Stencil Component Starter",
   "main": "dist/index.js",
@@ -34,7 +34,8 @@
   },
   "license": "MIT",
   "publishConfig": {
-    "access": "public"
+    "registry": "https://npm.pkg.github.com/"
   },
-  "gitHead": "86d8dbca5cffd3451e264541838284995ad7268b"
+  "repository": "github:christianulbrich/lerna-release-prototype-in-action",
+  "gitHead": "4938e1f52bb5500dbede1e283d1bb3d7c027e81d"
 }
