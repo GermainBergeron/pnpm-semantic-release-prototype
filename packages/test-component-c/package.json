@@ -34,7 +34,8 @@
   },
   "license": "MIT",
   "publishConfig": {
-    "access": "public"
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com/zalari"
   },
   "gitHead": "86d8dbca5cffd3451e264541838284995ad7268b"
 }
