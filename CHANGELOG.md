@@ -2,6 +2,19 @@
 
 #### 🚀 Enhancement
 
+- `@christianulbrich/test-component-a@0.1.0`
+  - change test-component a [#5](https://github.com/ChristianUlbrich/lerna-release-prototype-in-action/pull/5) ([@ChristianUlbrich](https://github.com/ChristianUlbrich))
+
+#### Authors: 1
+
+- Christian Ulbrich ([@ChristianUlbrich](https://github.com/ChristianUlbrich))
+
+---
+
+# (Tue Jun 09 2020)
+
+#### 🚀 Enhancement
+
 - `@christianulbrich/test-component-b@0.1.0`
   - Feature/modify b [#3](https://github.com/ChristianUlbrich/lerna-release-prototype-in-action/pull/3) ([@ChristianUlbrich](https://github.com/ChristianUlbrich))
 
