@@ -1,3 +1,17 @@
+# v0.2.2 (Tue Jun 09 2020)
+
+#### 🐛 Bug Fix
+
+- Feature/use new a in c [#8](https://github.com/ChristianUlbrich/lerna-release-prototype-in-action/pull/8) ([@ChristianUlbrich](https://github.com/ChristianUlbrich))
+- bump version of a ([@ChristianUlbrich](https://github.com/ChristianUlbrich))
+- change test-component a ([@ChristianUlbrich](https://github.com/ChristianUlbrich))
+
+#### Authors: 1
+
+- Christian Ulbrich ([@ChristianUlbrich](https://github.com/ChristianUlbrich))
+
+---
+
 # v0.2.0 (Tue Jun 09 2020)
 
 #### 🚀 Enhancement
