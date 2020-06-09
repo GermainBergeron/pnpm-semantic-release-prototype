@@ -1,5 +1,5 @@
 {
-  "name": "lerna-release-prototype",
+  "name": "@christianulbrich/lerna-release-prototype-in-action",
   "version": "0.0.1",
   "description": "Lerna.js release prototype",
   "main": "index.js",
@@ -18,10 +18,7 @@
     "finish-topic-branch": "git checkout master && git merge",
     "delete-topic-branch": "git branch -d"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@git.zalari.de:zalari/prototypes/lerna-release-prototype.git"
-  },
+  "repository": "github:christianulbrich/lerna-release-prototype-in-action",
   "keywords": [
     "lerna.js",
     "monorepo",
