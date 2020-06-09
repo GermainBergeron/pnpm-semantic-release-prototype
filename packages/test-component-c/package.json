@@ -1,6 +1,6 @@
 {
   "name": "@christianulbrich/test-component-c",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Stencil Component Starter",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -22,7 +22,7 @@
     "generate": "stencil generate"
   },
   "dependencies": {
-    "@christianulbrich/test-component-a": "0.2.1"
+    "@christianulbrich/test-component-a": "^0.2.2"
   },
   "devDependencies": {
     "@stencil/core": "1.14.0",
