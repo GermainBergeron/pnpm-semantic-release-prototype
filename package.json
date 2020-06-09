@@ -4,7 +4,7 @@
   "description": "Lerna.js release prototype",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "lerna run test",
     "start:test-registry": "docker run -it --rm --name verdaccio -p 4873:4873 verdaccio/verdaccio:4",
     "build": "lerna run build",
     "lerna": "lerna",
