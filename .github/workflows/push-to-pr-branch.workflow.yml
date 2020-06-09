@@ -15,7 +15,6 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-          scope: test
           registry-url: 'https://npm.pkg.github.com/'
 #      - run: npm ci
 #      - run: npm run bootstrap
@@ -26,6 +25,5 @@ jobs:
       - name: Publish canary version
         env:
           GH_TOKEN: ${{ secrets.AUTH_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
           NPM_TOKEN: ${{ secrets.AUTH_TOKEN }}
         run: npx auto canary --force
