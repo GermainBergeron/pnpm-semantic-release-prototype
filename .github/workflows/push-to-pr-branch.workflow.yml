@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: 12
           scope: test
-          registry-url: 'https://npm.pkg.github.com/zalari'
+          registry-url: 'https://npm.pkg.github.com/'
 #      - run: npm ci
 #      - run: npm run bootstrap
 #      - name: Build
