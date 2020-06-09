@@ -35,6 +35,8 @@ jobs:
 #        id: off_branch
       - name: show changes
         run: npx lerna changed
+      - name: fetch lerna
+        run: npm ci
       - name: Release
         env:
           GH_TOKEN: ${{ secrets.AUTH_TOKEN }}
