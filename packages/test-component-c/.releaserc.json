@@ -16,5 +16,5 @@
       "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
     }]
   ],
-  "tagFormat": "@christianulbrich/test-component-a@${version}"
+  "tagFormat": "@christianulbrich/test-component-c@${version}"
 }
