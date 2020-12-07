@@ -1,3 +1,10 @@
+## [0.4.2](https://github.com/christianulbrich/lerna-release-prototype-in-action/compare/@christianulbrich/test-component-a@0.4.1...@christianulbrich/test-component-a@0.4.2) (2020-12-07)
+
+
+### Bug Fixes
+
+* **component-a:** add npm to semantic-release ([8a35c51](https://github.com/christianulbrich/lerna-release-prototype-in-action/commit/8a35c515c85fb3c978c04d8da31669528137bb92))
+
 ## [0.4.1](https://github.com/christianulbrich/lerna-release-prototype-in-action/compare/@christianulbrich/test-component-a@0.4.0...@christianulbrich/test-component-a@0.4.1) (2020-12-07)
 
 
