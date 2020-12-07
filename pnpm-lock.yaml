@@ -5,6 +5,7 @@ importers:
     devDependencies:
       '@semantic-release/changelog': 5.0.1_semantic-release@17.3.0
       '@semantic-release/git': 9.0.0_semantic-release@17.3.0
+      '@semantic-release/npm': 7.0.9_semantic-release@17.3.0
       '@stencil/core': 1.14.0
       '@types/jest': 25.2.3
       '@types/puppeteer': 2.0.1
@@ -15,6 +16,7 @@ importers:
     specifiers:
       '@semantic-release/changelog': ^5.0.1
       '@semantic-release/git': ^9.0.0
+      '@semantic-release/npm': ^7.0.9
       '@stencil/core': 1.14.0
       '@types/jest': 25.2.3
       '@types/puppeteer': 2.0.1
