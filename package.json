@@ -1,0 +1,15 @@
+{
+  "name": "pnpm-semantic-release-prototype",
+  "version": "0.5.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christian Ulbrich (christian.ulbrich@zalari.de)",
+  "license": "ISC",
+  "engines": {
+    "node": ">=14",
+    "pnpm": ">=5"
+  }
+}
