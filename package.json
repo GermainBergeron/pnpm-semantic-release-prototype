@@ -2,30 +2,31 @@
   "name": "@christianulbrich/pnpm-semantic-release-prototype",
   "version": "0.5.0",
   "description": "",
-  "main": "index.js"
+  "main": "index.js",
   "author": "Christian Ulbrich (christian.ulbrich@zalari.de)",
   "engines": {
     "node": ">=14",
     "pnpm": ">=5"
   },
   "scripts": {
-    "test": "lerna run test",
+    "test": "pnpm run test",
     "start:test-registry": "docker run -it --rm --name verdaccio -p 4873:4873 verdaccio/verdaccio:4",
-    "build": "lerna run build",
-    "lerna": "lerna",
-    "bootstrap": "lerna bootstrap",
-    "modify:component-a": "echo \"#change\" >> packages/test-component-a/.changed && git add packages/test-component-a/.changed && git commit -m 'change test-component a'",
-    "modify:component-b": "echo \"#change\" >> packages/test-component-b/.changed && git add packages/test-component-b/.changed && git commit -m 'change test-component b'",
-    "modify:component-c": "echo \"#change\" >> packages/test-component-c/.changed && git add packages/test-component-c/.changed && git commit -m 'change test-component c'",
-    "publish-all": "lerna version --exact",
-    "publish-all:canary": "lerna publish --canary",
+    "build": "pnpm run build",
+    "pnpm": "pnpm",
+    "bootstrap": "pnpm i -r",
+    "modify:component-a:chore": "echo \"#change\" >> packages/test-component-a/.changed && git add packages/test-component-a/.changed && git commit -m 'chore(component-a): change test-component a'",
+    "modify:component-a:feat": "echo \"#change\" >> packages/test-component-a/.changed && git add packages/test-component-a/.changed && git commit -m 'feat(component-a): change test-component a'",
+    "modify:component-b:feat": "echo \"#change\" >> packages/test-component-b/.changed && git add packages/test-component-b/.changed && git commit -m 'feat(component-b): change test-component b'",
+    "modify:component-c:feat": "echo \"#change\" >> packages/test-component-c/.changed && git add packages/test-component-c/.changed && git commit -m 'feat(component-c): change test-component c'",
+    "publish-all": "echo \"publish-all\"",
+    "publish-all:canary": "echo \"publish canary\"",
     "create-topic-branch": "git checkout -b",
     "finish-topic-branch": "git checkout master && git merge",
     "delete-topic-branch": "git branch -d"
   },
-  "repository": "github:christianulbrich/lerna-release-prototype-in-action",
+  "repository": "github:ChristianUlbrich/pnpm-semantic-release-prototype",
   "keywords": [
-    "lerna.js",
+    "pnpm",
     "monorepo",
     "prototype"
   ],

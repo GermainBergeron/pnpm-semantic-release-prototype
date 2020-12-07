@@ -22,7 +22,7 @@
     "generate": "stencil generate"
   },
   "dependencies": {
-    "@christianulbrich/test-component-a": "^0.2.2"
+    "@christianulbrich/test-component-a": "workspace:^0.2.2"
   },
   "devDependencies": {
     "@stencil/core": "1.14.0",
