@@ -10,6 +10,18 @@
 
 * **component-a:** enable semantic-release-monorepo ([682a1e2](https://github.com/christianulbrich/lerna-release-prototype-in-action/commit/682a1e208871df7881ad4a5ff6b5a9b1b6796946))
 
+# [@christianulbrich/test-component-a-v0.5.0](https://github.com/christianulbrich/lerna-release-prototype-in-action/compare/@christianulbrich/test-component-a@0.4.3...@christianulbrich/test-component-a@0.5.0) (2020-12-07)
+
+
+### Bug Fixes
+
+* **component-a:** enable semantic-release in package ([d01dd66](https://github.com/christianulbrich/lerna-release-prototype-in-action/commit/d01dd66b4226df639d1bd4ac4053cea92f4eb70c))
+
+
+### Features
+
+* **component-a:** enable semantic-release-monorepo ([682a1e2](https://github.com/christianulbrich/lerna-release-prototype-in-action/commit/682a1e208871df7881ad4a5ff6b5a9b1b6796946))
+
 ## [0.4.3](https://github.com/christianulbrich/lerna-release-prototype-in-action/compare/@christianulbrich/test-component-a@0.4.2...@christianulbrich/test-component-a@0.4.3) (2020-12-07)
 
 
