@@ -1,3 +1,10 @@
+## [0.4.3](https://github.com/christianulbrich/lerna-release-prototype-in-action/compare/@christianulbrich/test-component-a@0.4.2...@christianulbrich/test-component-a@0.4.3) (2020-12-07)
+
+
+### Bug Fixes
+
+* **component-a:** fix tarball and update package.json in git ([2d29dff](https://github.com/christianulbrich/lerna-release-prototype-in-action/commit/2d29dff23093aeb71423076a9260b0c3748009b2))
+
 ## [0.4.2](https://github.com/christianulbrich/lerna-release-prototype-in-action/compare/@christianulbrich/test-component-a@0.4.1...@christianulbrich/test-component-a@0.4.2) (2020-12-07)
 
 
