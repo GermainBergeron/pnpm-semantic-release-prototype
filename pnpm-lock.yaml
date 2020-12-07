@@ -3,6 +3,7 @@ importers:
     specifiers: {}
   packages/test-component-a:
     devDependencies:
+      '@semantic-release/changelog': 5.0.1_semantic-release@17.3.0
       '@semantic-release/git': 9.0.0_semantic-release@17.3.0
       '@stencil/core': 1.14.0
       '@types/jest': 25.2.3
@@ -12,6 +13,7 @@ importers:
       puppeteer: 2.1.1
       semantic-release: 17.3.0
     specifiers:
+      '@semantic-release/changelog': ^5.0.1
       '@semantic-release/git': ^9.0.0
       '@stencil/core': 1.14.0
       '@types/jest': 25.2.3
@@ -678,6 +680,20 @@ packages:
     dev: true
     resolution:
       integrity: sha512-btm3D6S7VkRrgyYF31etUtVY/eQ1KzrNRqhFt25KSe2mKlXuLXJilglRC6eDA2P6ou94BUnk/Kz5MPEolXgoiw==
+  /@semantic-release/changelog/5.0.1_semantic-release@17.3.0:
+    dependencies:
+      '@semantic-release/error': 2.2.0
+      aggregate-error: 3.1.0
+      fs-extra: 9.0.1
+      lodash: 4.17.20
+      semantic-release: 17.3.0
+    dev: true
+    engines:
+      node: '>=10.18'
+    peerDependencies:
+      semantic-release: '>=15.8.0 <18.0.0'
+    resolution:
+      integrity: sha512-unvqHo5jk4dvAf2nZ3aw4imrlwQ2I50eVVvq9D47Qc3R+keNqepx1vDYwkjF8guFXnOYaYcR28yrZWno1hFbiw==
   /@semantic-release/commit-analyzer/8.0.1_semantic-release@17.3.0:
     dependencies:
       conventional-changelog-angular: 5.0.12
