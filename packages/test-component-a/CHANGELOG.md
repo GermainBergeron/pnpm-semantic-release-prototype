@@ -1,3 +1,10 @@
+# [0.4.0](https://github.com/christianulbrich/lerna-release-prototype-in-action/compare/@christianulbrich/test-component-a@0.3.0...@christianulbrich/test-component-a@0.4.0) (2020-12-07)
+
+
+### Features
+
+* **component-a:** add changelog generation ([de1b828](https://github.com/christianulbrich/lerna-release-prototype-in-action/commit/de1b828594454e73e3aa98a1fd3f228e7204eb4d))
+
 # v0.2.2 (Tue Jun 09 2020)
 
 #### 🐛 Bug Fix
