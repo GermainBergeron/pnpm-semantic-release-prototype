@@ -22,6 +22,7 @@ jobs:
         run: git checkout -b release-master
       - name: merge master into release-master to get latest tags
         run: git merge master
+      # create actual release and thus commits on release-master
       - name: Use Node.js 14.x
         uses: actions/setup-node@v1
         with:
@@ -34,7 +35,20 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.AUTH_TOKEN }}
         run: pnpm run publish-all
+      # now merge release-master into master and push master
       - name: checkout master
         run: git checkout master
-      - name: merge master
+      - name: merge release-master into master
+        run: git merge release-master
+      - name: push master with new tags
+        run: git push origin master --follow-tags
+      # now merge master into develop and push develop
+      - name: checkout develop
+        run: git checkout develop
+      - name: update develop
+        run: git pull
+      - name: merge master into develop
         run: git merge master
+      - name: push develop with all tags
+        run: git push origin develop
+
