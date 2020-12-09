@@ -30,7 +30,7 @@
   "tagFormat": "@christianulbrich/test-component-a@${version}",
   "branches": [
     "+([0-9])?(.{+([0-9]),x}).x",
-    "release-master",
+    "release",
     "next",
     "next-major",
     {
