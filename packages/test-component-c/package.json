@@ -42,6 +42,6 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
-  "repository": "github:christianulbrich/lerna-release-prototype-in-action",
+  "repository": "github:ChristianUlbrich/pnpm-semantic-release-prototype",
   "gitHead": "4938e1f52bb5500dbede1e283d1bb3d7c027e81d"
 }
