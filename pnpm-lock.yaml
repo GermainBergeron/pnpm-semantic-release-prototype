@@ -6,7 +6,7 @@ importers:
       '@semantic-release/changelog': 5.0.1_semantic-release@17.3.0
       '@semantic-release/git': 9.0.0_semantic-release@17.3.0
       '@semantic-release/npm': 7.0.9_semantic-release@17.3.0
-      '@stencil/core': 1.14.0
+      '@stencil/core': 2.3.0
       '@types/jest': 25.2.3
       '@types/puppeteer': 2.0.1
       jest: 26.0.1
@@ -18,7 +18,7 @@ importers:
       '@semantic-release/changelog': ^5.0.1
       '@semantic-release/git': ^9.0.0
       '@semantic-release/npm': ^7.0.9
-      '@stencil/core': 1.14.0
+      '@stencil/core': 2.3.0
       '@types/jest': 25.2.3
       '@types/puppeteer': 2.0.1
       jest: 26.0.1
@@ -848,6 +848,14 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-3u3O8y8HIORiKuDmPowJiUu9nNmpxq4ak1kR3aVuWH6YTQ7+Uexy0dAxabn3CUoQmh6cpYsk9l5P5yIX2EQHoQ==
+  /@stencil/core/2.3.0:
+    dev: true
+    engines:
+      node: '>=12.10.0'
+      npm: '>=6.0.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-VZ/Ox0E1kngcmHbJhHUufuLELi+xG3of3LuRI3X2AMWyE82JUVYlOEsQci/YBZWpfc9BS9I36R88prBew22oew==
   /@tootallnate/once/1.1.2:
     dev: true
     engines:
