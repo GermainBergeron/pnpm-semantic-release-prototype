@@ -3,7 +3,11 @@ name: Create Changelog and Release from Integration
 on:
   push:
     branches:
-      - develop
+      - master
+      - next
+      - next-major
+      - beta
+      - alpha
 
 jobs:
 
@@ -17,11 +21,6 @@ jobs:
           token: ${{ secrets.AUTH_TOKEN }}
       - name: Prepare repository
         run: git fetch --unshallow --tags
-      # create release branch and merge master into it, to get latest tags
-      - name: create release branch
-        run: git checkout -b release
-      - name: merge master into release to get latest tags
-        run: git merge origin/master
       # create actual release and thus commits on release
       - name: Use Node.js 14.x
         uses: actions/setup-node@v1
@@ -31,17 +30,11 @@ jobs:
         run: npm i -g pnpm
       - name: bootstrap monorepo
         run: pnpm i -r
-      - name: determine branch
-        run: git status
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.AUTH_TOKEN }}
         run: pnpm run publish-all
-      # now merge release into master and push master
-      - name: checkout master
-        run: git checkout master
-      - name: merge release into master
-        run: git merge release
+      # push master
       - name: push master with new tags
         run: git push origin master --follow-tags
       # now merge master into develop and push develop
@@ -51,6 +44,6 @@ jobs:
         run: git pull origin develop
       - name: merge master into develop
         run: git merge master
-      - name: push develop with all tags
+      - name: push develop
         run: git push origin develop
 
