@@ -1,3 +1,10 @@
+# [@christianulbrich/test-component-a-v0.6.0](https://github.com/ChristianUlbrich/pnpm-semantic-release-prototype/compare/@christianulbrich/test-component-a@0.5.1...@christianulbrich/test-component-a@0.6.0) (2020-12-09)
+
+
+### Features
+
+* process direct branches instead of interim branches ([4ed8391](https://github.com/ChristianUlbrich/pnpm-semantic-release-prototype/commit/4ed8391fea01b4bca0cebe153ca1ad4c3491b5c4))
+
 ## [0.5.1](https://github.com/ChristianUlbrich/pnpm-semantic-release-prototype/compare/@christianulbrich/test-component-a@0.5.0...@christianulbrich/test-component-a@0.5.1) (2020-12-09)
 
 
