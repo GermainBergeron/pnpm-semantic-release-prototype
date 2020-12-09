@@ -1,3 +1,16 @@
+# [@christianulbrich/test-component-a-v1.0.0](https://github.com/ChristianUlbrich/pnpm-semantic-release-prototype/compare/@christianulbrich/test-component-a@0.6.0...@christianulbrich/test-component-a@1.0.0) (2020-12-09)
+
+
+### Features
+
+* **component-a:** change sth. ([89c9297](https://github.com/ChristianUlbrich/pnpm-semantic-release-prototype/commit/89c9297ca1c1571a300aeef85bd43fc84a25b15e))
+* **component-a:** update to next StencilJS version ([d0a4d07](https://github.com/ChristianUlbrich/pnpm-semantic-release-prototype/commit/d0a4d07de1f976527c3bde9f8cd0af6decacf303))
+
+
+### BREAKING CHANGES
+
+* **component-a:** #change!
+
 # [@christianulbrich/test-component-a-v0.6.0](https://github.com/ChristianUlbrich/pnpm-semantic-release-prototype/compare/@christianulbrich/test-component-a@0.5.1...@christianulbrich/test-component-a@0.6.0) (2020-12-09)
 
 
