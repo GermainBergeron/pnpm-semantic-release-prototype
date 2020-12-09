@@ -46,7 +46,7 @@ jobs:
       - name: checkout develop
         run: git checkout develop
       - name: update develop
-        run: git pull
+        run: git pull origin
       - name: merge master into develop
         run: git merge master
       - name: push develop with all tags
