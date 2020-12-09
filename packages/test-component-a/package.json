@@ -40,5 +40,5 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "gitHead": "86d8dbca5cffd3451e264541838284995ad7268b",
-  "repository": "github:christianulbrich/lerna-release-prototype-in-action"
+  "repository": "github:ChristianUlbrich/pnpm-semantic-release-prototype"
 }
