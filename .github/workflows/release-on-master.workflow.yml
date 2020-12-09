@@ -31,6 +31,8 @@ jobs:
         run: npm i -g pnpm
       - name: bootstrap monorepo
         run: pnpm i -r
+      - name: determine branch
+        run: git status
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.AUTH_TOKEN }}
