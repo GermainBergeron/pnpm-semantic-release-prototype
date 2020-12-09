@@ -1,4 +1,4 @@
-# Lerna-Release-Prototype
+# pnpm-monorepo-release-prototype
 
 ## Intro
 This is a prototype for testing out semantic-releases in a pnpm monorepo. It can be fully tested, by using a local **NPM Registry** (Docker-based Verdaccio).
