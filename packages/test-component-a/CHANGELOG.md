@@ -1,3 +1,11 @@
+## [0.5.1](https://github.com/ChristianUlbrich/pnpm-semantic-release-prototype/compare/@christianulbrich/test-component-a@0.5.0...@christianulbrich/test-component-a@0.5.1) (2020-12-09)
+
+
+### Bug Fixes
+
+* **component-a:** fix repo url in package.json ([03d160f](https://github.com/ChristianUlbrich/pnpm-semantic-release-prototype/commit/03d160f43ccbae5e2cfaafdd076298d0a7a5c905))
+* release branch ([7b51d46](https://github.com/ChristianUlbrich/pnpm-semantic-release-prototype/commit/7b51d46ace6513ad0c21b9b1280c2a591420793c))
+
 # [@christianulbrich/test-component-a-v0.5.0](https://github.com/christianulbrich/lerna-release-prototype-in-action/compare/@christianulbrich/test-component-a@0.4.3...@christianulbrich/test-component-a@0.5.0) (2020-12-07)
 
 
