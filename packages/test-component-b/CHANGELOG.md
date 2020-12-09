@@ -1,3 +1,10 @@
+# [@christianulbrich/test-component-b-v0.5.0](https://github.com/ChristianUlbrich/pnpm-semantic-release-prototype/compare/@christianulbrich/test-component-b@0.4.0...@christianulbrich/test-component-b@0.5.0) (2020-12-09)
+
+
+### Features
+
+* **component-b:** things must change... ([3016ae2](https://github.com/ChristianUlbrich/pnpm-semantic-release-prototype/commit/3016ae2f73d0fca114ed562c2ad2e1e850aa66d6))
+
 # [@christianulbrich/test-component-b-v0.4.0](https://github.com/ChristianUlbrich/pnpm-semantic-release-prototype/compare/@christianulbrich/test-component-b@0.3.0...@christianulbrich/test-component-b@0.4.0) (2020-12-09)
 
 
