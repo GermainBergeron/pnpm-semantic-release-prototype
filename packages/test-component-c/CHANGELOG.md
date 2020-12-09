@@ -1,3 +1,10 @@
+# [@christianulbrich/test-component-c-v0.3.0](https://github.com/ChristianUlbrich/pnpm-semantic-release-prototype/compare/@christianulbrich/test-component-c@0.2.0...@christianulbrich/test-component-c@0.3.0) (2020-12-09)
+
+
+### Features
+
+* process direct branches instead of interim branches ([4ed8391](https://github.com/ChristianUlbrich/pnpm-semantic-release-prototype/commit/4ed8391fea01b4bca0cebe153ca1ad4c3491b5c4))
+
 # [@christianulbrich/test-component-c-v0.2.0](https://github.com/christianulbrich/lerna-release-prototype-in-action/compare/@christianulbrich/test-component-c@0.1.1...@christianulbrich/test-component-c@0.2.0) (2020-12-07)
 
 
