@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 feature=${1:-a}
 
 # promoting next to master simply involves merging next into master

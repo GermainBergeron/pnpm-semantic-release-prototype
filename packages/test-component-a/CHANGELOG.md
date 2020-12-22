@@ -1,3 +1,10 @@
+# [@christianulbrich/test-component-a-v1.1.0](https://github.com/ChristianUlbrich/pnpm-semantic-release-prototype/compare/@christianulbrich/test-component-a@1.0.0...@christianulbrich/test-component-a@1.1.0) (2020-12-22)
+
+
+### Features
+
+* **component-a:** change test-component a ([211833f](https://github.com/ChristianUlbrich/pnpm-semantic-release-prototype/commit/211833fe6a660c8fe2f8fa4ed7b5bce388222913))
+
 # [@christianulbrich/test-component-a-v1.0.0](https://github.com/ChristianUlbrich/pnpm-semantic-release-prototype/compare/@christianulbrich/test-component-a@0.6.0...@christianulbrich/test-component-a@1.0.0) (2020-12-09)
 
 

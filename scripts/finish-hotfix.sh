@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 hotfix=${1:-a}
 
 # finishing a hotfix means, merging the hotfix into master
