@@ -1,3 +1,10 @@
+# [@christianulbrich/test-component-c-v0.4.2](https://github.com/ChristianUlbrich/pnpm-semantic-release-prototype/compare/@christianulbrich/test-component-c@0.4.1...@christianulbrich/test-component-c@0.4.2) (2020-12-22)
+
+
+### Bug Fixes
+
+* **component-c:** fix the thing! ([1bccfde](https://github.com/ChristianUlbrich/pnpm-semantic-release-prototype/commit/1bccfde8d128d0b6b0d95097c90eb1b7ecb62fc5))
+
 # [@christianulbrich/test-component-c-v0.4.1](https://github.com/ChristianUlbrich/pnpm-semantic-release-prototype/compare/@christianulbrich/test-component-c@0.4.0...@christianulbrich/test-component-c@0.4.1) (2020-12-09)
 
 
