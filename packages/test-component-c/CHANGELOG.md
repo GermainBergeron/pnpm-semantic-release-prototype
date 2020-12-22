@@ -1,9 +1,16 @@
-# [@christianulbrich/test-component-c-v0.3.1](https://github.com/ChristianUlbrich/pnpm-semantic-release-prototype/compare/@christianulbrich/test-component-c@0.3.0...@christianulbrich/test-component-c@0.3.1) (2020-12-09)
+# [@christianulbrich/test-component-c-v0.4.1](https://github.com/ChristianUlbrich/pnpm-semantic-release-prototype/compare/@christianulbrich/test-component-c@0.4.0...@christianulbrich/test-component-c@0.4.1) (2020-12-09)
 
 
 ### Bug Fixes
 
-* **component-c:** fix the thing! ([1bccfde](https://github.com/ChristianUlbrich/pnpm-semantic-release-prototype/commit/1bccfde8d128d0b6b0d95097c90eb1b7ecb62fc5))
+* **component-c:** port hotfix ([b88dad1](https://github.com/ChristianUlbrich/pnpm-semantic-release-prototype/commit/b88dad17c7bb07fed8ade89fb7ed9b5a2ab74be7))
+
+# [@christianulbrich/test-component-c-v0.4.0](https://github.com/ChristianUlbrich/pnpm-semantic-release-prototype/compare/@christianulbrich/test-component-c@0.3.0...@christianulbrich/test-component-c@0.4.0) (2020-12-09)
+
+
+### Features
+
+* **component-c:** essential change! ([fe75240](https://github.com/ChristianUlbrich/pnpm-semantic-release-prototype/commit/fe7524055b28254ed7348a80571c8aed0360f876))
 
 # [@christianulbrich/test-component-c-v0.3.0](https://github.com/ChristianUlbrich/pnpm-semantic-release-prototype/compare/@christianulbrich/test-component-c@0.2.0...@christianulbrich/test-component-c@0.3.0) (2020-12-09)
 

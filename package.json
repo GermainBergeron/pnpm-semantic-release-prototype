@@ -19,10 +19,7 @@
     "modify:component-b:feat": "echo \"#change\" >> packages/test-component-b/.changed && git add packages/test-component-b/.changed && git commit -m 'feat(component-b): change test-component b'",
     "modify:component-c:feat": "echo \"#change\" >> packages/test-component-c/.changed && git add packages/test-component-c/.changed && git commit -m 'feat(component-c): change test-component c'",
     "publish-all": "pnpm run release -r --workspace-concurrency=1",
-    "publish-all:canary": "echo \"publish canary\"",
-    "create-topic-branch": "git checkout -b",
-    "finish-topic-branch": "git checkout master && git merge",
-    "delete-topic-branch": "git branch -d"
+    "publish-all:local": "pnpm run release -r --workspace-concurrency=1 -- --no-ci"
   },
   "repository": "github:ChristianUlbrich/pnpm-semantic-release-prototype",
   "keywords": [

@@ -1,49 +1,47 @@
-# Lerna-Release-Prototype
+# pnpm-monorepo-release-prototype
 
 ## Intro
-This is a prototype for testing out Lerna.js releases. It can be fully tested, by using a local **NPM Registry** (Docker-based Verdaccio).
+This is a prototype for testing out semantic-releases in a pnpm monorepo. It can be fully tested, by using a local **NPM Registry** (Docker-based Verdaccio).
 
 ## Setup
 You need to have Node and Docker installed.
 
-1. install deps `npm install`
+1. install deps `npm i -g pnpm`
+1. install deps `pnpm i -r`
 1. run local test registry `npm run start:test-registry`
 1. create a test user for publishing `npm adduser --registry http://localhost:4873`
 
-## Release Flow 101
-This prototype is for modelling the usage of a monorepo with the **Release Flow**[1] _branching model_. It basically boils down, to only using very _short-lived_ **topic** branches that are directly merged into **master**. The **master** branch is used for doing releases - in terms of NPM it will mean for publishing packages.
+## Integrated Release Flow
+The branching model is a mixture of git-flow and release flow, combined with supporting a `@next` version branch and a `@latest` version branch, that are matched to [npm-dist-tags](https://docs.npmjs.com/cli/v6/commands/npm-dist-tag) via the usage of [semantic-release](https://github.com/semantic-release/semantic-release) semantics.
 
-For implementing a feature you'd have to do the following steps:
+It boils down to the following _branches_ with their semantics:
+* `develop` this is the _integration_ branch, all features are PRed into this branch and this represents the **most current** state of development, that is **not released**
+* `next` this is the branch that is **published** to the [npm-dist-tag](https://docs.npmjs.com/cli/v6/commands/npm-dist-tag) _@next_, it represents a **deliberately selected** commit from `develop`, i.e. a PR from `develop` to `next`; it will get **merged back** into `develop`, representing the **development** version.
+* `master` this is the branch that is **published** to the [npm-dist-tag](https://docs.npmjs.com/cli/v6/commands/npm-dist-tag) _@latest_, it represents a **deliberately selected** commit from **either** `develop` or `next`; if coming from `develop` it will be merged back there. It represents a product version and gets **released**.
 
-1. _create_ a topic branch
-1. actually implement a feature
-1. (optionally) _release_ a **canary** version for _"others"_
-1. merge-request it into master
-1. upon approval it will get merged into master and your topic branch is deleted
+By using conventional commits (confirming to [Angular Commit Message Conventions](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines), releases will be _automagically_ **created, committed and published**
 
-Releases are always carried out from the **master** branch and involves in terms of a monorepo the following steps:
+## Convenience scripts
+There are a set of scripts for your convenience, for _simulating_ typical branching scenarios.
 
-1. all _changed_ components, i.e. all components that have changed **since the last** release **must** be _bumped_ and then _published_
-1. components that do **depend** on _other_ components (in the repo) need to be _bumped_ and _published_ as well
+**N.B.**: The following assume, that you are _inside_ the [./scripts](./scripts) _folder_.
 
-### Example: Modify a component that is not consumed by other internal components and release it
-In this example we will modify a component, that is not depended on by other components. Its change should only impact itself.
-1. create a topic branch: `npm run create-topic-branch topic/modify-b`
-1. implement it (change it): `npm run modify:component-b`
-1. merge-request and approve it: `npm run finish-topic-branch topic/modify-b && npm run delete-topic-branch topic/modify-b`
-1. release it: `npm run publish-all`
+They also assume, that your branches are locally _up-to-date_, calling `./update-branches.sh` will pull from `origin`.
 
-Now you'd have to enter the version bump (major, minor, patch) and it will get _released_ (i.e. _published_)
+### Starting a feature
+* `./start-feature.sh` starts a feature, by _branching off_ `develop`
 
-### Example: Modify a component that is consumed by other internal components
-In this example we will modify a component, that is depended on by other components. Its change should trigger new releases for other components as well.
+### Promoting a feature to next
+* `./promote-feature-to-next.sh` _promotes_, i.e. _merges_ your feature on `next` and _triggers_ a semantic-release
 
-1. create a topic branch: `npm run create-topic-branch topic/modify-a`
-1. implement it (change it): `npm run modify:component-a`
-1. merge-request and approve it: `npm run finish-topic-branch topic/modify-a && npm run delete-topic-branch topic/modify-a`
-1. release it: `npm run publish-all`
+### Promoting a feature to master
+* `./promote-feature-to-master.sh` _promotes_, i.e. _merges_ your feature on `master` and _triggers_ a semantic-release
 
-Now you'd have to enter the version bump (major, minor, patch) for **both** components; **first** for the _modified_ component and **second** for the component, that is depending on it. **Both** will get _released_ (i.e. _published_).
+### Promoting next to master
+* `./promote-next-to-master.sh` _promotes_ **current** next to master, by _merging_ onto it
 
+### Starting a hotfix
+* `./start-hotfix.sh` starts a hotfix, by _branching off_ `master`
 
-[1]: https://docs.microsoft.com/en-us/azure/devops/learn/devops-at-microsoft/release-flow
+### Finishing a hotfix
+* `./finish-hotfix.sh` finishes a hotfix, i.e. _merges_ onto `master` and _triggers_ a semantic-release
