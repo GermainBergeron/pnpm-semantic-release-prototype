@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 feature=${1:-a}
 
 # promoting a feature to next, means, that we simply merge the feature branch into next

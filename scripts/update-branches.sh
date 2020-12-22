@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 # simply update from remote branches our interesting branches
 git checkout develop
 git pull origin develop
