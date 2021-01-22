@@ -45,3 +45,29 @@ They also assume, that your branches are locally _up-to-date_, calling `./update
 
 ### Finishing a hotfix
 * `./finish-hotfix.sh` finishes a hotfix, i.e. _merges_ onto `master` and _triggers_ a semantic-release; it will create a PR into `integration`
+
+## Example Workflows
+
+### Implementing a feature
+Bread-and-butter for every dev.
+
+1. _start_ a feature a:
+
+`$ ./scripts/start-feature.sh a`
+
+2. _implement_ it:
+
+`$ pnpm modify:component-a:feat`
+
+3. _finish_ it:
+
+`$ ./scripts/finish-feature.sh a`
+
+**Result:** The feature is merged into `develop`.
+
+### Promote integration to next
+Get all current features in `develop` into next and create a release that is published to `@next`.
+
+`$ ./scripts/promote-integration-to-next.sh`
+
+**Result:** _Next_ version is published.
