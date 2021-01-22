@@ -5,7 +5,7 @@
 git checkout next
 git merge develop
 # and generate a new release
-cd .. && pnpm run publish-all:local
+pnpm run publish-all:local
 # and back-merge next into develop
 git checkout develop
 git merge next

@@ -8,6 +8,6 @@ feature=${1:-a}
 git checkout master
 git merge feature/${feature}
 # and generate a new release
-cd .. && pnpm run publish-all:local
+pnpm run publish-all:local
 # delete feature branch
 git branch -d feature/${feature}
