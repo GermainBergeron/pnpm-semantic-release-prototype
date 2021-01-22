@@ -9,6 +9,8 @@ git checkout master
 git merge hotfix/${hotfix}
 # and generate a new release
 cd .. && pnpm run publish-all:local
+# and create a new PR into integration, by creating a PR branch and merging the hotfix into it
+git checkout -b feature/integrate-${hotfix}
+git merge hotfix/${hotfix}
 # delete hotfix branch
 git branch -d hotfix/${hotfix}
-echo "Don't forget to port the hotfix into next, if applicable"

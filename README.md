@@ -31,17 +31,17 @@ They also assume, that your branches are locally _up-to-date_, calling `./update
 ### Starting a feature
 * `./start-feature.sh` starts a feature, by _branching off_ `develop`
 
-### Promoting a feature to next
-* `./promote-feature-to-next.sh` _promotes_, i.e. _merges_ your feature on `next` and _triggers_ a semantic-release
+### Finishing a feature
+* `./finish-feature.sh` _finishes_ a feature, i.e. _merges_ your feature on `develop`
 
-### Promoting a feature to master
-* `./promote-feature-to-master.sh` _promotes_, i.e. _merges_ your feature on `master` and _triggers_ a semantic-release
+### Promote integration to next
+* `./promote-integration-to-next.sh` _promotes_, i.e. _merges_ `develop` on `master` (and thus _potentially_ **several** features) and _triggers_ a semantic-release; next will be `back-merged into develop
 
 ### Promoting next to master
-* `./promote-next-to-master.sh` _promotes_ **current** next to master, by _merging_ onto it
+* `./promote-next-to-master.sh` _promotes_ **current** next to master, by _merging_ onto it **TODO: BACK-MERGE?**
 
 ### Starting a hotfix
 * `./start-hotfix.sh` starts a hotfix, by _branching off_ `master`
 
 ### Finishing a hotfix
-* `./finish-hotfix.sh` finishes a hotfix, i.e. _merges_ onto `master` and _triggers_ a semantic-release
+* `./finish-hotfix.sh` finishes a hotfix, i.e. _merges_ onto `master` and _triggers_ a semantic-release; it will create a PR into `integration`
