@@ -1,6 +1,6 @@
 {
   "name": "@christianulbrich/test-component-a",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Stencil Component Starter",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
