@@ -17,6 +17,7 @@
     "modify:component-a:chore": "echo \"#change\" >> packages/test-component-a/.changed && git add packages/test-component-a/.changed && git commit -m 'chore(component-a): change test-component a'",
     "modify:component-a:feat": "echo \"#change\" >> packages/test-component-a/.changed && git add packages/test-component-a/.changed && git commit -m 'feat(component-a): change test-component a'",
     "modify:component-a:fix": "echo \"#change\" >> packages/test-component-a/.changed && git add packages/test-component-a/.changed && git commit -m 'fix(component-a): change test-component a'",
+    "modify:component-a:breaking": "echo \"#change\" >> packages/test-component-a/.changed && git add packages/test-component-a/.changed && git commit -m 'fix(component-a): BREAKING CHANGE: test-component a'",
     "modify:component-b:feat": "echo \"#change\" >> packages/test-component-b/.changed && git add packages/test-component-b/.changed && git commit -m 'feat(component-b): change test-component b'",
     "modify:component-c:feat": "echo \"#change\" >> packages/test-component-c/.changed && git add packages/test-component-c/.changed && git commit -m 'feat(component-c): change test-component c'",
     "publish-all": "pnpm run release -r --workspace-concurrency=1",
